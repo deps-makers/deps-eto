@@ -52,7 +52,7 @@ const SignUpForm = () => {
         <label className={styles.handle}>
           <span>@</span>{' '}
           <TextInput type='text' name='handle' placeholder='핸들네임' ref={handleRef} required autoFocus />{' '}
-          <span>::eto.example.org</span>
+          <span>::{import.meta.env.VITE_DOMAIN_NAME!}</span>
         </label>
       </label>
       <label className={styles.col}>
