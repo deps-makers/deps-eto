@@ -54,6 +54,7 @@ jobs:
           target: prod
           build-args: |
             VITE_API_URL=https://oj.rubixdev.net/api
+            VITE_DOMAIN_NAME=eto.example.org
           tags: |
             ${{ env.IMAGE_PREFIX }}/frontend:latest
             ${{ env.IMAGE_PREFIX }}/frontend:${{ github.sha }}
