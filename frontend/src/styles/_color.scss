@@ -77,6 +77,20 @@ $neutral: (
 );
 
 $semantic-light: (
+  surface-base: $neutral-50,
+  surface-sunken: $neutral-50,
+  surface-sunken-active: $neutral-50,
+  surface-raise: $neutral-50,
+
+  text-primary: $neutral-950,
+  text-secondary: $neutral-800,
+  text-tertiary: $neutral-600,
+
+  border-default: $neutral-900,
+  border-subtle: $neutral-800,
+  border-input: $neutral-300,
+  border-default-active: $neutral-500,
+
   success-bg: #f0fdf4,
   success-fg: #22c55e,
   success-text: #15803d,
@@ -92,6 +106,20 @@ $semantic-light: (
 );
 
 $semantic-dark: (
+  surface-base: $neutral-950,
+  surface-sunken: $neutral-900,
+  surface-sunken-active: $neutral-800,
+  surface-raise: $neutral-900,
+
+  text-primary: $neutral-50,
+  text-secondary: $neutral-200,
+  text-tertiary: $neutral-400,
+
+  border-default: $neutral-100,
+  border-subtle: $neutral-200,
+  border-input: $neutral-700,
+  border-default-active: $neutral-500,
+
   success-bg: #052e16,
   success-fg: #4ade80,
   success-text: #86efac,
@@ -114,6 +142,6 @@ $semantic-dark: (
 
 @mixin emit-semantic($map) {
   @each $key, $value in $map {
-    --semantic-#{$key}: #{$value};
+    --#{$key}: #{$value};
   }
 }

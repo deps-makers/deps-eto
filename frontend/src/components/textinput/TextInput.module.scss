@@ -2,17 +2,17 @@
   @include body1;
 
   padding: 0.5em;
-  background-color: $neutral-900;
-  border: 1px solid $neutral-700;
-  color: $neutral-50;
+  background-color: var(--surface-sunken);
+  border: 1px solid var(--border-input);
+  color: var(---text-primary);
   border-radius: 4px;
   transition:
     border-color 0.2s,
     background-color 0.1s;
 
   &:focus {
-    background-color: $neutral-800;
-    border-color: $primary-500;
+    background-color: var(--surface-sunken-active);
+    border-color: var(--border-input-active);
     outline: none;
   }
 }

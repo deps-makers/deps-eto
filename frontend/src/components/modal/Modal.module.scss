@@ -9,10 +9,10 @@
 }
 
 .modal {
-  background: $neutral-900;
-  border: 1px solid $neutral-700;
+  background: var(--surface-raise);
+  border: 1px solid var(--border-subtle);
   border-radius: 8px;
-  color: $neutral-100;
+  color: var(--text-primary);
 
   width: 100vw;
   max-width: 28em;

@@ -43,8 +43,8 @@
 
 .button-transparent {
   background: none;
-  border: 1px solid $neutral-100;
-  color: $neutral-100;
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
 
   &:hover {
     background-color: $neutral-100;
@@ -57,7 +57,7 @@
   }
 
   &:active {
-    color: $neutral-100;
+    color: $neutral-900;
     background-color: $neutral-300;
     outline-offset: 1px;
   }

@@ -4,7 +4,7 @@
   flex-direction: column;
 
   header {
-    border-bottom: 1px solid $neutral-800;
+    border-bottom: 1px solid var(--border-subtle);
     padding-bottom: 0.75em;
 
     h2 {
@@ -26,7 +26,7 @@
       .caption {
         @include caption;
         opacity: 0.75;
-        color: $neutral-200;
+        color: var(--text-secondary);
       }
     }
 
@@ -34,9 +34,9 @@
       @include code;
       height: 120px;
       padding: 0.5em;
-      background-color: $neutral-900;
-      border: 1px solid $neutral-800;
-      color: $neutral-50;
+      background-color: var(--surface-sunken);
+      border: 1px solid var(--border-input);
+      color: var(--text-primary);
     }
 
     .buttons {
