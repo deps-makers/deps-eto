@@ -21,7 +21,7 @@ const Mainpage = () => {
         <section className={styles.intro}>
           <img src={logoSrc} alt='Logo' className={styles.logo} />
           <p className={styles.description}>
-            <span className={styles.welcome}>welcome to</span> eto.example.org
+            <span className={styles.welcome}>welcome to</span> {import.meta.env.VITE_DOMAIN_NAME!}
           </p>
           <div className={styles.hrWrapper}>
             <hr />
