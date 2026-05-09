@@ -118,7 +118,6 @@ const Background = () => {
       diamonds.current = Array.from({ length: count }, () => createDiamond(w, h, colors));
 
       canvas.style.background = getComputedStyle(document.documentElement).getPropertyValue(bgVar).trim();
-      console.log(getComputedStyle(document.documentElement).getPropertyValue(bgVar).trim());
     };
 
     const resize = () => {

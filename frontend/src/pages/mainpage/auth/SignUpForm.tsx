@@ -19,7 +19,6 @@ const SignUpForm = () => {
 
   const handleFormClose = () => {
     close();
-    console.log('test');
   };
 
   const handleClickMigrate = () => {
@@ -46,7 +45,12 @@ const SignUpForm = () => {
   };
 
   return (
-    <form className={styles.signUpForm} onSubmit={() => {}}>
+    <form
+      className={styles.signUpForm}
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <label className={styles.col}>
         <small className={styles.caption}>핸들네임</small>
         <label className={styles.handle}>

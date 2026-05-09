@@ -12,7 +12,9 @@ const SignInForm = () => {
   const handleRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
     const handle = handleRef.current?.value;
     const password = passwordRef.current?.value;
 
